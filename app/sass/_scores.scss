@@ -1,0 +1,127 @@
+.scores {
+  max-width: 802px;
+  font-size: 14px;
+  line-height: 20px;
+
+  &__title{
+    position: relative;
+    width: 100%;
+    margin: -8px 0 27px -4px;
+    font-size: 26px;
+    font-weight: 700;
+
+    span{
+      position: relative;
+      top: 6px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: bottom;
+      width: 42px;
+      height: 35px;
+
+      img{
+        display: block;
+      }
+
+    }
+
+  }
+
+  &__info{
+    position: relative;
+    margin-bottom: 11px;
+
+    .websters-select{
+      position: absolute;
+      top: -5px;
+      right: 0;
+    }
+
+  }
+
+  &__time{
+    width: 80px;
+    text-align: right;
+  }
+
+  &__reduction{
+    width: 50px;
+    text-align: right;
+  }
+
+  &__master{
+    width: 247px;
+    text-align: right;
+  }
+
+  &__number{
+    width: 47px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__enemy{
+    width: 209px;
+  }
+
+  table{
+    width: 100%;
+
+    th{
+      vertical-align: middle;
+      padding: 4px 11px 2px;
+      border-bottom: 1px solid #fff;
+      color: #61b1ff;
+      background-color: #052340;
+
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+
+        img{
+          display: block;
+        }
+
+      }
+
+    }
+
+    td{
+      vertical-align: middle;
+      height: 30px;
+      background-color: #e9eef4;
+      border-bottom: 3px solid #fff;
+      color: #283947;
+
+      a{
+        position: relative;
+        margin-right: 10px;
+        color: #283947;
+
+        &:hover{
+          text-decoration: underline;
+        }
+
+        &:after{
+          position: absolute;
+          top: 0;
+          left: -5px;
+          height: 15px;
+          border-right: 1px solid #283947;
+          content: '';
+        }
+
+        &:first-child:after{
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+

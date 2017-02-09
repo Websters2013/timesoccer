@@ -1,0 +1,45 @@
+.bread-crumbs {
+  position: relative;
+  top: -34px;
+  left: -40px;
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 25px;
+
+  &__item{
+    position: relative;
+    margin-right: 24px;
+    color: #000;
+
+    &:after{
+      position: absolute;
+      top: 3px;
+      left: -21px;
+      width: 12px;
+      height: 10px;
+      background-image: url('../img/icon-arrow.png');
+      content: '';
+    }
+
+    &:first-child:after{
+      display: none;
+    }
+
+    &:last-child{
+      font-weight: 600;
+      cursor: default;
+
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+}
+

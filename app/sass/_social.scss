@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 89px;
+  left: 2px;
+
+  &__item{
+    margin-right: 14px;
+
+    svg{
+      width: 24px;
+      fill: #000;
+      -webkit-transition: fill .3s ease;
+      transition: fill .3s ease;
+    }
+
+    &:hover svg{
+      fill: #1581ec;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,66 @@
+.footer {
+
+  &__menu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    font-size: 14px;
+
+    &-item{
+      position: relative;
+      margin: 0 17px 0 8px;
+      color: #000;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      &:before{
+        position: absolute;
+        top: 3px;
+        left: -13px;
+        height: 11px;
+        border-right: 1px solid #000;
+        content: '';
+      }
+
+      &:first-child:before{
+        display: none;
+      }
+
+    }
+
+  }
+
+  &__control{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    font-size: 14px;
+
+    &-item{
+      margin-left: 18px;
+      color: #000;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  &__logo{
+    position: absolute;
+    top: 81px;
+    right: 10px;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,73 @@
+.popular {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 26px;
+
+  &__item{
+    width: 49%;
+    margin-bottom: 21px;
+    color: #929599;
+    font-size: 12px;
+    line-height: 18px;
+
+    &:hover .popular__img:after{
+      opacity: 1;
+    }
+
+  }
+
+  &__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 4px;
+    width: 148px;
+    height: 88px;
+    overflow: hidden;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+    &:before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background: url("../img/icon-play.png") no-repeat 0 0;
+      background-size: cover;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 2;
+      content: '';
+    }
+
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(5,35,64,.7);
+      opacity: 0;
+      z-index: 1;
+      -webkit-transition: opacity .3s ease;
+      transition: opacity .3s ease;
+      content: '';
+    }
+
+  }
+
+  &__topic{
+    margin-bottom: 2px;
+    color: #201f20;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+}

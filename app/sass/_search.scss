@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+
+  svg{
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+    -webkit-transition: fill .3s ease;
+    transition: fill .3s ease;
+  }
+
+  &:hover svg{
+    fill: #1581eb;
+  }
+
+}
+
